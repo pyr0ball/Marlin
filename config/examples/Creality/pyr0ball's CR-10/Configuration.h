@@ -327,7 +327,7 @@
 #if ENABLED(PSU_CONTROL)
   #define PSU_ACTIVE_HIGH false // Set 'false' for ATX (1), 'true' for X-Box (2)
 
-  //#define PS_DEFAULT_OFF      // Keep power off until enabled directly with M80
+  //#define PSU_DEFAULT_OFF      // Keep power off until enabled directly with M80
 
   //#define AUTO_POWER_CONTROL  // Enable automatic control of the PS_ON pin
   #if ENABLED(AUTO_POWER_CONTROL)
@@ -785,7 +785,7 @@
  *   http://blog.kyneticcnc.com/2018/10/computing-junction-deviation-for-marlin.html
  */
 #if DISABLED(CLASSIC_JERK)
-  #define JUNCTION_DEVIATION_MM 0.02 // (mm) Distance from real junction edge
+  #define JUNCTION_DEVIATION_MM 0.013 // (mm) Distance from real junction edge
 #endif
 
 /**
